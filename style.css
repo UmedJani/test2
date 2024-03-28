@@ -1,0 +1,50 @@
+
+.popup-menu {
+   /* position: relative; */
+}
+.popup-menu button {
+    padding: 20px;
+    position: absolute ;
+    top:40%;
+    left: 45%;
+
+}
+.popup {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 500px;
+    padding: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: xx-large;
+}
+input {
+    width: 300px;
+}
+form > button {
+    padding: 10px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}

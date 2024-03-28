@@ -1,0 +1,48 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="popup-menu">
+    <button class="open-popup-btn">Открыть Popup</button>
+</div>
+
+<div class="popup">
+    <div class="popup-content">
+        <span class="close">x</span>
+        <h2>Введите вашу электронную почту</h2>
+        <form method="post" action="sender.php">
+            <input type="email" name="email" id="emailInput">
+            <button>Отправить</button>
+        </form>
+        
+    </div>
+</div>
+
+<script>
+    let open = document.querySelector('.open-popup-btn');
+    let openPoup = document.querySelector('.popup');
+    let close = document.querySelector('.close');
+    let hideBtn = document.querySelector('.popup-menu');
+    
+    
+    //открыть Popup
+    open.onclick = function () {
+        openPoup.classList.add('show');
+        hideBtn.classList.add('hide');
+   }
+   // закрыть popup
+    close.onclick = function () {
+        openPoup.classList.remove('show');
+        hideBtn.classList.remove('hide');
+   }
+ 
+</script>
+</body>
+</html>
